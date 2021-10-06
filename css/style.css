@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+    background: cornsilk;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.nav {
+    width: 100%;
+    height: 60px;
+    background: chocolate;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 20px;
+    grid-template-rows: auto;
+    justify-content: start;
+    padding: 0 90px;
+    padding-top: 10px;
+
+    
+}
+.card {
+    height: 260px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 15%);
+    /* border-radius: 50px; */
+    position: relative;
+    
+}
+.pro {
+    width: 100%;
+    height: 140px;
+    background: darkcyan;
+    transition: all linear 0.5s;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .pro:hover {
+    height: 221px;
+}
+.det {
+    width: 100%;
+    height: 80px;
+    background: white;
+    z-index: 2;
+    position: absolute;
+    top: 141px;
+    left: 0;
+    transition: all linear 0.4s;
+}
+.det h2 {
+    color: darkblue;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+.det p {
+    color: black;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2px;
+}
+.det h4 {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    margin-top: 2px;
+    
+}
+.det h3 {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-top: 2px;
+}
+.social {
+    width: 100%;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    z-index: 6;
+    position: absolute;
+    top: 221px;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    
+    
+}
+.twitter img {
+    width: 20px;
+    height: 20px;
+}
+.twitter {
+    background-color: #00acee;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.reddit img {
+    width: 25px;
+    height: 25px;
+}
+.reddit {
+    background-color: #ff5700;
+    display: grid;
+    grid-template-columns: auto, 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+.insta img {
+    width: 25px;
+    height: 25px;
+}
+.insta {
+    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
+    display: grid;
+    grid-template-columns: auto, 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.facebook {
+    background: #3b5998;
+    display: grid;
+    grid-template-columns: auto, 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 375px) {
+    body {
+        overflow: hidden;
+       
+        
+    }
+    .container {
+      /* width: 300px; */
+      padding: 0 20px;
+      grid-gap: 15px;
+    }
+  }
+
+
+
+
+
+
+
